@@ -44,7 +44,7 @@ fun FavouritesTab(
     } else {
         LazyColumn(
             modifier = Modifier.fillMaxSize(),
-            contentPadding = PaddingValues(vertical = 8.dp, bottom = 80.dp)
+            contentPadding = PaddingValues(top = 8.dp, bottom = 80.dp)
         ) {
             itemsIndexed(songs, key = { _, song -> song.id }) { index, song ->
                 SongItem(
